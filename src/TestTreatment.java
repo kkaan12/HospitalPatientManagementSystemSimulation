@@ -11,12 +11,17 @@ public class TestTreatment {
         t.enqueue(new TreatmentRequest(1007));
         t.enqueue(new TreatmentRequest(1008));
 
+        // Prints the queue to the screen
+        System.out.println("=== Treatment Queue ===");
+        t.printQueue();
+
         // Remove request from queue.
         t.dequeue();
         t.dequeue();
         t.dequeue();
 
         // Prints the queue to the screen.
+        System.out.println("=== After Dequeue ===");
         t.printQueue();
 
     }

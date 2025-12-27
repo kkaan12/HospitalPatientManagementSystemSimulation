@@ -14,10 +14,10 @@ public class TestPatient {
         p.printList();
         //Removing patients
         p.removePatient(1004);
-        System.out.println("--- Patient List After Deleting ID 3  ---");
+        System.out.println("--- Patient List After Deleting ID 1004  ---");
         p.printList();
         //Finding patients
-        System.out.println("ID 3 is searching...");
+        System.out.println("ID 1003 is searching...");
         p.findPatient(1003);
 
         System.out.println("--- Final Patient List ---");

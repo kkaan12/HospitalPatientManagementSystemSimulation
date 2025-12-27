@@ -55,12 +55,13 @@ public class PatientList {
     public Node findPatient(int id){
         Node current=head;
         while(current!=null){
-            if(current.data.id==id){ // The list is reviewed from beginning to end.
+            if(current.data.id==id){
+                System.out.println("ID: "+current.data.id+" is found.");// The list is reviewed from beginning to end.
                 return current;
             }
             current=current.next;
         }
-
+        System.out.println("Not valid!");
         return null;
     }
     //Prints the list to the screen.
@@ -123,7 +124,7 @@ public class PatientList {
 
         System.out.println("---- Patients Sorted By Severity ----");
         for(int i=1; i<=n; i++){
-            System.out.println("ID: "+array[i].id+"\nName: "+array[i].name+"Severity: "+array[i].severity);
+            System.out.println("ID: "+array[i].id+"\nName: "+array[i].name+"\nSeverity: "+array[i].severity);
             System.out.println();
         }
     }

@@ -11,7 +11,7 @@ public class TestDischarge {
 
         System.out.println("--- Discharge Stack ---");
         s.printStack();
-        // Remove discharge recort to the top.
+        // Remove discharge record to the top.
         s.pop();
         s.pop();
 

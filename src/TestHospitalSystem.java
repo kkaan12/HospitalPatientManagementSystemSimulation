@@ -18,10 +18,12 @@ public class TestHospitalSystem {
 
         // Treatment requests
         system.addTreatmentRequest(1001);
-        system.addTreatmentRequest(1002, true);   // priority
+        system.addTreatmentRequest(1008, true);   // priority
         system.addTreatmentRequest(1005, true);   // priority
         system.addTreatmentRequest(1003);
-        system.addTreatmentRequest(1008);
+        system.addTreatmentRequest(1002);
+        system.addTreatmentRequest(1004);
+        system.addTreatmentRequest(1010);
 
 
         System.out.println("\n===== INITIAL SYSTEM STATE =====");
@@ -31,11 +33,12 @@ public class TestHospitalSystem {
         system.processNextTreatment();
         system.processNextTreatment();
         system.processNextTreatment();
+        system.processNextTreatment();
 
         System.out.println("\n===== AFTER PROCESSING TREATMENTS =====");
         system.printSystemState();
 
-        // Heap Sort testi
+        // Heap Sort Testing
         System.out.println("\n===== SORTED PATIENTS BY SEVERITY (HEAP SORT) =====");
         system.sortPatientsBySeverity();
     }
